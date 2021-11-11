@@ -5,3 +5,5 @@ Database and Migrations - OK
 User Registration - OK
 Login and Logout System - OK
 User Profile and Picture - OK
+Create, Update and Delete Posts - OK
+
