@@ -15,7 +15,7 @@ class Post(models.Model):
 
     # when create a post it doesn't know were to redirect
     # this will tell it were to find the url of the model object
-    # of a especific instance
+    # of a specific instance
     # reverse: will return full url to the rout as a string
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'pk': self.pk})

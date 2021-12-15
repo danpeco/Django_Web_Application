@@ -1,4 +1,4 @@
-Django Full Web Application. (On development)\ 
+Django Full Web Application. (On development) \
 Apps and Routes - OK\
 Templates - OK\
 Database and Migrations - OK\

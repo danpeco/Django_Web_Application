@@ -7,9 +7,10 @@ from django.views.generic import (
     UpdateView, DeleteView)
 from .models import Post
 
+
 def home(request):
     context = {
-        'posts': Post.objects.all()
+        'posts': Post. objects.all()
     }
     return render(request, 'blog/home.html', context)
 
@@ -36,6 +37,8 @@ class UserPostListView(ListView):
 
 class PostDetailView(DetailView):
     model = Post
+    # if no template_name, it's going to look for # <app>/<model>_<viewtype>.html
+    # blog/post_detail.html
 
 
 class PostCreateView(LoginRequiredMixin, CreateView):
@@ -81,4 +84,3 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
-
